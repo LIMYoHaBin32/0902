@@ -1,0 +1,9 @@
+# 1. 파일이 존재하지 않을 때 파일을 만들어서 쓰는 법
+#include <stdio.h>
+int main(void)
+{
+	FILE* pFile = fopen("test.txt", "w");  //write mode
+	fprintf(pFile, "blockdmask");          //printf -> fprintf
+	fclose(pFile);
+	return 0;
+}
